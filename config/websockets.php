@@ -32,16 +32,16 @@ return [
             'enable_client_messages' => false,
             'enable_statistics' => true,
         ],
-        [
-            'id' => env('PUSHER_APP_ID1'),
-            'name' => env('APP_NAME1'),
-            'key' => env('PUSHER_APP_KEY1'),
-            'secret' => env('PUSHER_APP_SECRET1'),
-            'path' => env('PUSHER_APP_PATH1'),
-            'capacity' => null,
-            'enable_client_messages' => false,
-            'enable_statistics' => true,
-        ],
+        // [
+        //     'id' => env('PUSHER_APP_ID1'),
+        //     'name' => env('APP_NAME1'),
+        //     'key' => env('PUSHER_APP_KEY1'),
+        //     'secret' => env('PUSHER_APP_SECRET1'),
+        //     'path' => env('PUSHER_APP_PATH1'),
+        //     'capacity' => null,
+        //     'enable_client_messages' => false,
+        //     'enable_statistics' => true,
+        // ],
     ],
 
     /*

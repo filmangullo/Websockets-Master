@@ -31,17 +31,8 @@ return [
             'capacity' => null,
             'enable_client_messages' => false,
             'enable_statistics' => true,
+            'scheme' => env('PUSHER_APP_SCHEME'),
         ],
-        // [
-        //     'id' => env('PUSHER_APP_ID1'),
-        //     'name' => env('APP_NAME1'),
-        //     'key' => env('PUSHER_APP_KEY1'),
-        //     'secret' => env('PUSHER_APP_SECRET1'),
-        //     'path' => env('PUSHER_APP_PATH1'),
-        //     'capacity' => null,
-        //     'enable_client_messages' => false,
-        //     'enable_statistics' => true,
-        // ],
     ],
 
     /*
@@ -112,7 +103,7 @@ return [
          * Use an DNS resolver to make the requests to the statistics logger
          * default is to resolve everything to 127.0.0.1.
          */
-        'perform_dns_lookup' => false,
+        'perform_dns_lookup' => true,
     ],
 
     /*

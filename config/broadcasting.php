@@ -40,7 +40,7 @@ return [
                 // 'useTLS' => true,
                 'encrypted' => true,
                 'host' => 'websockets.local',
-                'port' => 6001,
+                'port' => env('BROADCAST_DRIVER', 6001),
                 'scheme' => 'http',
             ],
         ],

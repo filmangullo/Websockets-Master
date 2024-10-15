@@ -31,7 +31,7 @@ return [
             'capacity' => null,
             'enable_client_messages' => false,
             'enable_statistics' => true,
-            'scheme' => env('PUSHER_APP_SCHEME'),
+            'scheme' => env('PUSHER_APP_SCHEME', 'https'),
         ],
     ],
 

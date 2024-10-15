@@ -39,15 +39,9 @@ return [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
                 'encrypted' => true,
-<<<<<<< HEAD
-                'host' => 'transportwebsockets.seindogroup.com',
-                'port' => 6001,
-                'scheme' => 'https',
-=======
-                'host' => 'websockets.local',
                 'port' => env('BROADCAST_DRIVER', 6001),
-                'scheme' => 'http',
->>>>>>> 6ec960191f23ba5c4450bb304a06888434e28d78
+                'host' => env('PUSHER_HOST') ?: env('APP_DOMAIN'),
+                'scheme' => env('PUSHER_SCHEME', 'https') === 'https',
             ],
         ],
 

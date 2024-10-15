@@ -31,7 +31,6 @@ return [
             'capacity' => null,
             'enable_client_messages' => false,
             'enable_statistics' => true,
-            'scheme' => env('PUSHER_APP_SCHEME'),
         ],
     ],
 
@@ -103,7 +102,7 @@ return [
          * Use an DNS resolver to make the requests to the statistics logger
          * default is to resolve everything to 127.0.0.1.
          */
-        'perform_dns_lookup' => true,
+        'perform_dns_lookup' => false,
     ],
 
     /*

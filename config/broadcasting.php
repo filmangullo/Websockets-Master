@@ -19,6 +19,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | WebSocket Server Configuration
+    |--------------------------------------------------------------------------
+    |
+    | In this section, you can define all the WebSocket server settings and
+    | parameters that will be used to manage real-time communication. You
+    | can configure the WebSocket server's port, security options, and
+    | any additional settings that optimize the connection for your application.
+    | These configurations ensure seamless, secure communication between
+    | clients and the server.
+    |
+    */
+    'server' => [
+        'port' => env('WEBSOCKETS_PORT', 6002),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Broadcast Connections
     |--------------------------------------------------------------------------
     |

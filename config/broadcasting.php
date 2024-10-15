@@ -58,7 +58,7 @@ return [
                 'encrypted' => true,
                 'port' => env('BROADCAST_DRIVER', 6001),
                 'host' => env('PUSHER_HOST') ?: env('APP_DOMAIN'),
-                'scheme' => env('PUSHER_SCHEME', 'https') === 'https',
+                'scheme' => env('PUSHER_APP_SCHEME', 'https'),
             ],
         ],
 

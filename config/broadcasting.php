@@ -31,7 +31,7 @@ return [
     |
     */
     'server' => [
-        'port' => env('WEBSOCKETS_PORT', 6002),
+        'port' => env('WEBSOCKETS_PORT', 6001),
     ],
 
     /*
@@ -56,7 +56,7 @@ return [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
                 'encrypted' => true,
-                'port' => env('BROADCAST_DRIVER', 6001),
+                'port' => env('PUSHER_PORT', 6001),
                 'host' => env('PUSHER_HOST') ?: env('APP_DOMAIN'),
                 'scheme' => env('PUSHER_APP_SCHEME', 'https'),
             ],

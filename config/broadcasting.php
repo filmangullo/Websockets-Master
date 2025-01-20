@@ -19,6 +19,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | WebSocket Server Configuration
+    |--------------------------------------------------------------------------
+    |
+    | In this section, you can define all the WebSocket server settings and
+    | parameters that will be used to manage real-time communication. You
+    | can configure the WebSocket server's port, security options, and
+    | any additional settings that optimize the connection for your application.
+    | These configurations ensure seamless, secure communication between
+    | clients and the server.
+    |
+    */
+    'server' => [
+        'port' => env('WEBSOCKETS_PORT', 6001),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Broadcast Connections
     |--------------------------------------------------------------------------
     |
@@ -39,9 +56,15 @@ return [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
                 'encrypted' => true,
+<<<<<<< HEAD
                 'host' => 'transportwebsockets.seindogroup.com',
                 'port' => 6001,
                 'scheme' => 'https',
+=======
+                'port' => env('PUSHER_PORT', 6001),
+                'host' => env('PUSHER_HOST') ?: env('APP_DOMAIN'),
+                'scheme' => env('PUSHER_APP_SCHEME', 'https'),
+>>>>>>> b048acef1425ec41d730d1eb3506d3f67a73bf3f
             ],
         ],
 
